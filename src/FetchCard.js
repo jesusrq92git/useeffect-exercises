@@ -13,14 +13,12 @@ const FetchCard = () => {
       })
   }
 
-  const updatePosts = useCallback(
-    () => {
-      getPosts(user.id)
-        .then(newPosts=>{
-          setPosts(newPosts);
-        })
-    }, [user.id]
-  )
+  const updatePosts = useCallback(() => {
+    getPosts(user.id)
+      .then(newPosts=>{
+        setPosts(newPosts);
+      })
+  }, [user.id]);
   
   useEffect(()=>{
     updateUser();
@@ -31,7 +29,7 @@ const FetchCard = () => {
       updatePosts();
     }
   }, [user, updatePosts]);
-  
+
   return (
     <div>
       <button onClick={updateUser}>
