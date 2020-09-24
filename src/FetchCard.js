@@ -34,7 +34,7 @@ const FetchCard = () => {
   
   return (
     <div>
-      <button onClick={()=>updateUser()}>
+      <button onClick={updateUser}>
         Another user
       </button>
       <h1>{user.name}</h1>

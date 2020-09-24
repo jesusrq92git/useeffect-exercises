@@ -13,9 +13,9 @@ export default function App() {
       </button>
       
       <hr/>
-        { show && <Lifecycle />}
+        { show && <Lifecycle /> }
       <hr/>
-        { show && <ResizeApp />}
+        { show && <ResizeApp /> }
       <hr/>
         <FetchCard />
     </div>
