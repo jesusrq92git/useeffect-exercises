@@ -12,7 +12,7 @@ const ResizeApp = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     }
-  },[]);
+  });
 
   return(
     <div>
